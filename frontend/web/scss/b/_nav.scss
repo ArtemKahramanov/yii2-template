@@ -1,0 +1,28 @@
+//main: style.scss
+
+.nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li > a{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    background: white;
+    transition: background 0.3s ease;
+    &:hover{
+      background: #eee;
+      color: #333;
+    }
+  }
+  
+  .active a{
+    background: $red;
+    color: white;
+    &:hover{
+      color: white;
+      background: $red;
+    }
+  }
+}

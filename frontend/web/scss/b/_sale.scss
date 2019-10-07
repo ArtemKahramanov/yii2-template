@@ -1,0 +1,24 @@
+.sale {
+  width: 50%;
+  padding: 15px;
+  border: 1px solid #f1f1f1;
+  margin-right: 10px;
+  border-radius: 4px;
+  background: url('/img/sale.png') no-repeat;
+  background-color: snow;
+  background-position: 439px -47px;
+  background-color: snow;
+  background-size: 105px;
+
+  h5{
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    &{
+      width: 100%;
+      margin-bottom: 25px;
+      margin-right: 0;
+    }
+  }
+}

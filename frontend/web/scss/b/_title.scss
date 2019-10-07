@@ -1,0 +1,47 @@
+.title {
+  font-weight: 900;
+  margin-bottom: 20px;
+
+  &--section {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  &--profit {
+    margin-bottom: 20px;
+    font-size: 18px;
+
+    &:after {
+      background-color: #333;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 1px;
+      left: 50%;
+      margin-left: -25px;
+      position: absolute;
+      width: 50px;
+    }
+  }
+
+  &--course {
+    margin-bottom: 25px !important;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: left !important;
+  }
+
+  &--modal {
+    margin: 0;
+    font-weight: 700;
+  }
+
+  @media screen and (max-width: 420px){
+    &--course{
+      font-size: 40px;
+    }
+  }
+
+}

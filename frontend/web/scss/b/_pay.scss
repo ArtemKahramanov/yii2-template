@@ -1,0 +1,46 @@
+.pay {
+  width: 50%;
+  padding: 15px;
+  border: 1px solid #f1f1f1;
+  margin-left: 10px;
+  border-radius: 4px;
+  background: url('/img/oplata.png') no-repeat;
+  background-size: 93px;
+  background-position: 460px -5px;
+  background-color: snow;
+  display: flex;
+  flex-direction: column;
+
+  & img {
+    filter: grayscale(100%);
+    opacity: .5;
+    transition: $transition;
+    &:hover {
+      filter: none;
+      opacity: 1;
+    }
+    @media screen and (max-width: 768px) {
+      & {
+        margin: 5px;
+      }
+    }
+  }
+
+  h5 {
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    margin: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      width: 100%;
+      margin-left: 0;
+    }
+    &__image{
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.lk {
+  display: flex;
+  margin-bottom: 25px;
+
+  &__left {
+    width: 25%;
+    margin-right: 15px;
+
+    .panel__head {
+      background: white;
+      padding: 10px 5px 5px 15px;
+      border-bottom: 1px solid #c0c0c03b;
+
+      h3 {
+        font-weight: 700;
+      }
+    }
+
+    .panel__body .nav {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__right {
+    width: 75%;
+    margin-left: 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      flex-direction: column;
+
+      &__left {
+        margin: 0 0 25px 0;
+        width: 100%;
+      }
+
+      &__right {
+        margin: 0 0 25px 0;
+        width: 100%;
+      }
+    }
+  }
+
+}
+

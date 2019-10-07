@@ -1,0 +1,24 @@
+.certificate {
+  display: flex;
+  align-items: center;
+  margin-bottom: $mb;
+
+  img {
+    max-width: 50%;
+    margin-right: 35px;
+  }
+
+  p {
+    margin-left: 20px;
+  }
+
+  @media screen and (max-width: 768px){
+    &{
+      flex-direction: column-reverse;
+    }
+    & img{
+      max-width: 60%;
+      margin: auto;
+    }
+  }
+}

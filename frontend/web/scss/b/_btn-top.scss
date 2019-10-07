@@ -1,0 +1,34 @@
+.btn-top {
+  background-color: #D83B2D;
+  color: #ffffff;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  z-index: 99;
+  border: none;
+  border-radius: 15%;
+  padding: 4px 8px;
+  display: none;
+  opacity: 0.6;
+  outline: none;
+  transition: $transition;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      right: 10px;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    & {
+      position: static;
+      display: block;
+      margin: -5px auto 15px;
+      font-size: 15px;
+      padding: 0 5px;
+    }
+  }
+}

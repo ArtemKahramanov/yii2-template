@@ -1,0 +1,21 @@
+.breadcrumb {
+  background: transparent;
+  margin: 0;
+  padding: 25px 0;
+  justify-content: center;
+
+  a {
+    color: $red;
+  }
+
+  li{
+    &:after {
+      content: "/";
+      margin: 0 5px;
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+}
+

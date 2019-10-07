@@ -1,0 +1,63 @@
+.education {
+  width: 25%;
+  padding: 15px;
+  position: relative;
+
+  &__image {
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+
+  .title{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #D83B2D7a;
+  }
+
+  &:before{
+    content: "";
+    color: $red;
+    font-size: 17px;
+    position: absolute;
+  }
+
+  &:first-child:before{
+    content: "1";
+  }
+  &:nth-child(2):before{
+    content: "2";
+  }
+  &:nth-child(3):before{
+    content: "3";
+  }
+  &:nth-child(4):before{
+    content: "4";
+  }
+
+  @media screen and (max-width: 768px){
+    &{
+      width: 100%;
+      padding: 15px 25px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__image{
+      margin: auto;
+    }
+    &:before{
+      margin-left: 70px;
+    }
+  }
+  @media screen and (max-width: 420px){
+    //&__image{
+    //  margin-left: 55px;
+    //}
+    &:before{
+      margin-left: 40px;
+    }
+  }
+
+}
+

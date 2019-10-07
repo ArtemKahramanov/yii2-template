@@ -1,0 +1,42 @@
+//main: style.scss
+
+.form-group{
+  margin-bottom: 15px;
+
+  label{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  &--right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    textarea, select{
+      width: 80%;
+    }
+    
+    label{
+      margin: 0 15px 0 0;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+
+    &--right {
+      align-items: flex-start;
+      flex-direction: column;
+
+      label {
+        margin-bottom: 5px;
+      }
+
+      input, textarea, select, button {
+        width: 100%;
+      }
+    }
+  }
+}

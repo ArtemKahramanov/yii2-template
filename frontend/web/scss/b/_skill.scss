@@ -1,0 +1,42 @@
+.skill {
+  border-bottom: 1px solid #eee;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  &:hover {
+    .skill__button{
+      background: #eee;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 2px;
+    top: 10px;
+    transition: $transition;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+  }
+
+  h4 {
+    margin: 15px 0;
+  }
+
+  &--open {
+    transform: rotate(45deg);
+    background: #eee;
+  }
+
+  &__content {
+    display: none;
+  }
+
+  &:first-child {
+    border-top: 1px solid #eee;
+  }
+
+
+}

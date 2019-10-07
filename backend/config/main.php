@@ -11,7 +11,6 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
@@ -42,6 +41,15 @@ return [
             'rules' => [
             ],
         ],
+    ],
+    'modules' => [
+        'treemanager' =>  [
+            'class' => '\kartik\tree\Module',
+            'treeViewSettings' => [
+                'nodeView' => '@backend/views/category/_form'
+            ]
+            // other module settings, refer detailed documentation
+        ]
     ],
     'params' => $params,
 ];

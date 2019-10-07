@@ -1,0 +1,28 @@
+.profit {
+  margin-bottom: $mb;
+  text-align: center;
+
+  &__icon {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid $red;
+    color: $red;
+    font-size: 35px;
+    transition: $transition;
+
+    &:hover{
+      background: $red;
+      color: #fff;
+    }
+  }
+  @media screen and (max-width: 768px){
+    & div{
+      margin-bottom: 25px;
+    }
+  }
+}

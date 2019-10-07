@@ -1,0 +1,41 @@
+.info-block {
+  background: url('/img/Parallax_Section_Image3.jpg');
+  background-attachment: fixed;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: $mb;
+  background-size: cover;
+
+  &__content {
+    padding: 100px 0;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 42px;
+  }
+
+  .text {
+    font-size: 18px;
+    color: #fff;
+  }
+
+  &__line {
+    background: #fff;
+    max-width: 350px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 768px){
+    &__content{
+      padding: 50px 0;
+    }
+    & .title{
+      font-size: 30px;
+    }
+
+  }
+
+}

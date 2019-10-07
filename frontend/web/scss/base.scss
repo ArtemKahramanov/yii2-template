@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  background: $primary;
+  height: 100%;
+  font-size: 16px;
+  color: #fff;
+  font-family: Roboto, Sans-Serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+h1, h2, h3, b {
+  font-family: Roboto, Sans-Serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2{
+  font-size: 36px;
+}
+
+h3.title, h4.title, h5.title, h3, h4, h5 {
+  font-weight: 700;
+}
+
+h4,h5 {
+  margin-bottom: 15px;
+}
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wrap .container {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+  transition: $transition;
+  &:hover {
+    text-decoration: none;
+    color: #333;
+  }
+}
+
+.help-block {
+  color: $red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.content-wrap {
+  max-width: 350px;
+  margin: auto;
+}
+
+.accent {
+  color: $red;
+  border-bottom: 1px solid $red;
+  font-size: 18px;
+  &:hover {
+    color: $red;
+  }
+}
+
+.center {
+  text-align: center;
+  margin: 0 0 25px 0;
+}
+
+.navbar-nav {
+  flex-direction: row;
+
+  .nav-item {
+    margin: 0 10px;
+  }
+}
+
+.carousel-control-prev {
+  left: -40px;
+}
+
+.carousel-control-next {
+  right: -40px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 41%;
+  bottom: auto;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+  height: auto;
+}
+
+.carousel-control-next-icon {
+  background: none;
+  &:after {
+    content: "\f105";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 45px;
+    color: black;
+  }
+}
+
+.carousel-control-prev-icon {
+  background: none;
+  &:after {
+    content: "\f104";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 45px;
+    color: black;
+  }
+}
+
+h1.title {
+  text-align: center;
+  margin-bottom: $mb;
+}
+
+.mb-max {
+  margin-bottom: 100px;
+}
+.mb {
+  margin-bottom: $mb;
+}
+.map {
+  border: none;
+}
+#rev_slider_5_1_wrapper {
+  margin-top: -25px;
+}
+
+.breadcrumb-row {
+  margin-top: -25px;
+  margin-bottom: 25px;
+  background: #f2f2f2;
+}
+
+.subtitle {
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .mb-md {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .content-wrap {
+    max-width: 100%;
+    margin: 0 0 25px 0;
+  }
+}
+
+@media screen and (max-width: 420px){
+
+  .logo{
+    max-width: 230px;
+  }
+}
+@media screen and (max-width: 330px){
+  .logo{
+    max-width: 200px;
+  }
+}
+
+.fa-phone {
+  color: #58b932;
+}
+.fa-viber {
+  color: #7b529b;
+}
+.fa-whatsapp {
+  color: #63d264;
+}
+
+.fa-telegram-plane {
+  color: #3ea8df;
+}
+
+.summary {
+  margin: 10px 0 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+
+  li a, li span {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.1;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid $red;
+    transition: $transition;
+
+    &:hover {
+      background: $red;
+      color: #fff;
+    }
+  }
+
+  .active a{
+    background: $red;
+    color: #fff;
+  }
+
+  .prev a, .prev span{
+    border-radius: 4px 0 0 4px;
+  }
+
+  .next a, .next span{
+    border-radius: 0 4px 4px 0;
+  }
+}
+
+.blog-comments {
+  margin-bottom: $mb;
+}
+
+.box {
+  box-shadow: 1px 1px 7px #efefef;
+  padding: 15px 25px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+
+  &--aside {
+    border-radius: 4px;
+    padding: 0;
+    box-shadow: 1px 1px 7px rgba(171, 171, 171, 0.05);
+    border: 1px solid #ececec;
+  }
+}
+
+.date {
+  font-size: 14px;
+  color: #949494;
+  font-weight: normal;
+  text-align: right;
+}

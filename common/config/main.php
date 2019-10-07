@@ -1,6 +1,6 @@
 <?php
 return [
-    'name' => 'Project',
+    'name' => 'Дым-Дымыч',
     'language' => 'ru-RU',
     'sourceLanguage' => 'en-US',
     'aliases' => [

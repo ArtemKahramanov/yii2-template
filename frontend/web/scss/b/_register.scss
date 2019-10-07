@@ -1,0 +1,50 @@
+.register{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 550px;
+
+  &__row {
+    border-bottom: 1px solid #505050;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    color: #b8b8b8;
+
+    p{
+      margin: 0 25px 0 0;
+      font-size: 22px;
+    }
+  }
+
+  .price {
+    color: #fff;
+  }
+
+  &__first-pay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #303030;
+    padding: 15px 25px 15px 25px;
+    border-radius: 0px 0 8px 8px;
+    font-size: 18px;
+    color: #b8b8b8;
+  }
+  @media screen and (max-width: 768px){
+    &__row{
+      flex-direction: column;
+    }
+    &__first-pay{
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    &__row p{
+      width: 255px;
+      text-align: center;
+    }
+  }
+}

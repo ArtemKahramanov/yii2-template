@@ -43,5 +43,13 @@ return [
             ],
         ],
     ],
+    'modules' => [
+        'contact' => [
+            'class' => 'app\modules\contact\Module',
+        ],
+        'menu' => [
+            'class' => \frontend\modules\menu\Module::class,
+        ],
+    ],
     'params' => $params,
 ];

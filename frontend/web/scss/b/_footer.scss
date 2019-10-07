@@ -1,0 +1,31 @@
+.footer{
+  border-top: 5px solid $red;
+  background: #151515;
+
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  p {
+    color: #969595;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  a {
+    color: #fff;
+    i{
+      color: #fff;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    &__row{
+      text-align: center;
+      flex-direction: column-reverse;
+    }
+  }
+
+}

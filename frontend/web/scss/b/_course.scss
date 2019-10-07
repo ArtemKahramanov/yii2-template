@@ -1,0 +1,94 @@
+.course {
+  margin-top: -25px;
+
+  &__head {
+    min-height: calc(100vh - 85px);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 35px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/img/course/html-css-1.jpg') no-repeat;
+    background-size: cover;
+    margin-bottom: $mb;
+  }
+
+  &__card-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: $transition;
+    margin-bottom: $mb;
+  }
+
+  &__education-bg {
+    background: url('/img/elitefon.jpg');
+    background-size: cover;
+    box-shadow: 8px 7px 19px 0 rgba(0, 0, 0, 0.18);
+    padding: 50px 0 35px 0;
+    margin-bottom: $mb;
+
+    p, .subtitle {
+      color: #b8b8b8;
+    }
+
+    h2, h4 {
+      color: #e8e8e8;
+    }
+  }
+
+  &__education-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px auto;
+  }
+
+  &__register {
+    background: url('/img/course/286e844.jpg');
+    background-size: cover;
+    padding: 100px 0;
+    color: #fff;
+  }
+
+  &__job {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__sale {
+    display: flex;
+    @media screen and (max-width: 768px) {
+      & {
+        flex-direction: column;
+      }
+    }
+  }
+
+
+    &--advanced {
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/img/course/code-1839406_1920.jpg') no-repeat;
+      background-size: cover;
+    }
+
+    &--js {
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/img/course/programming-1873854_1920.jpg') no-repeat;
+      background-size: cover;
+    }
+
+    &--php {
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('/img/course/coding-1841550_1920.jpg') no-repeat;
+      background-size: cover;
+    }
+
+    &--yii {
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/img/course/backend.jpg') no-repeat;
+      background-size: cover;
+    }
+
+    &--lara {
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/img/course/backend.jpg') no-repeat;
+      background-size: cover;
+    }
+  }

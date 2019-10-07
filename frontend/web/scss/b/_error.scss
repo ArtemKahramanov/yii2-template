@@ -1,0 +1,10 @@
+.error{
+  text-align: center;
+  color: #666;
+  font-size: 200px;
+
+  &__404 {
+    line-height: 200px;
+    transform: rotate(180deg);
+  }
+}
